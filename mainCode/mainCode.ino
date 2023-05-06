@@ -42,7 +42,11 @@ void setup() {
                     // continue;
                 }
             } else {
-//             break;
+                turn_left(1, 1, 10);
+                if(headingDegrees <= min_heading || headingDegrees >= max_heading) {
+                    stand();
+                    break;
+                }
             }
         }
         // Serial.println("hai");
