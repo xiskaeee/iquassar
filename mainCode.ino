@@ -24,6 +24,14 @@ void setup()
   // initializing controller
   // controller_setup();
   
+}
+
+/*
+  - loop function
+   ---------------------------------------------------------------------------*/
+void loop()
+{
+  
   compass_signal();
   Serial.print("Heading (degrees): "); Serial.println(headingDegrees);
   
@@ -73,15 +81,7 @@ void setup()
   delay(2000);
   stand();
   
-}
-
-/*
-  - loop function
-   ---------------------------------------------------------------------------*/
-void loop()
-{
-  
-  trot_gait_forward(1, 0.25, 10);
+  // trot_gait_forward(1, 0.25, 10);
   
   // acceleration_show();
   
